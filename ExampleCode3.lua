@@ -7,7 +7,7 @@ local CooldownRemote = Framework:GetRemote("Cooldown")
 
 local Cooldown = {}
 
-function Cooldown:IsCooldown(Player, Move)
+function Cooldown:IsCooldown(Player: Player, Move)
     local Character = Player.Character
     local Quirk = DataService:Get(Player, "Quirk")
     local MoveInfo = QuirkInfo[Quirk]["Moves"][Move]
